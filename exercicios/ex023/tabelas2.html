@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    table {
+      width: 400px;
+      border-collapse: collapse;
+
+    }
+
+    caption {
+      background-color: rgb(144, 139, 139);
+
+      padding: 10px;
+    }
+
+    td,
+    th {
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    thead,
+    tfoot {
+      background-color: grey;
+      color: white;
+
+    }
+
+    tbody>tr:nth-child(2n) {
+      background-color: rgb(221, 221, 221);
+    }
+  </style>
+
+  <body>
+
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+      <caption><strong>População Angolana</strong></caption><!--Legenda da tabela-->
+      <thead>
+        <tr>
+          <th scope="col">Província</th>
+          <th scope="rcol" style="width: 50px;">População</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luanda</td>
+          <td>37 578</td>
+        </tr>
+        <tr>
+          <td>Bengo</td>
+          <td>20 789</td>
+        </tr>
+        <tr>
+          <td>Huambo</td>
+          <td>15 456</td>
+        </tr>
+        <tr>
+          <td>Cabinda</td>
+          <td>10 123</td>
+        </tr>
+        <tr>
+          <td>Malange</td>
+          <td>8 765</td>
+        </tr>
+        <tr>
+          <td>Huíla</td>
+          <td>12 345</td>
+        </tr>
+        <tr>
+          <td>Namibe</td>
+          <td>9 876</td>
+        </tr>
+        <tr>
+          <td>Uíge</td>
+          <td>14 321</td>
+        </tr>
+        <tr>
+          <td>Zaire</td>
+          <td>11 234</td>
+        </tr>
+        <tr>
+          <td>Cuando Cubango</td>
+          <td>7 890</td>
+        </tr>
+        <tr>
+          <td>Cunene</td>
+          <td>6 543</td>
+        </tr>
+        <tr>
+          <td>Benguela</td>
+          <td>18 765</td>
+        </tr>
+        <tr>
+          <td>Bié</td>
+          <td>13 456</td>
+        </tr>
+        <tr>
+          <td>Malanje</td>
+          <td>9 012</td>
+        </tr>
+        <tr>
+          <td>Luena</td>
+          <td>8 654</td>
+        </tr>
+        <tr>
+          <td>Sumbe</td>
+          <td>7 890</td>
+        </tr>
+        <tr>
+          <td>Ondjiva</td>
+          <td>6 789</td>
+
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total da População</th>
+          <td><strong>37 890 575</strong></td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+  </body>
+
+</html>
