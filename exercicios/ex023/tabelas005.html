@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabelas</title>
-</head>
-<body>
-  <thead>
-    <tr>
-      <th>Área</th>
-    <th>Disciplinas</th>
-    <th>Notas</th>
-    <th>Média</th>
-    </tr>
-    <tr>
-      <td>xx</td>
-    </tr>
-  </thead>
-  <tbody>
 
-  </tbody>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+
+      }
+
+      table {
+        width: 100%;
+        max-width: fit-content;
+        border-collapse: collapse;
+        margin: 20px auto;
+      }
+
+      td,
+      th {
+        border: 2px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .left {
+        text-align: left;
+        width: 200px;
+      }
+
+      .grey {
+        background-color: grey;
+        color: white;
+      }
+
+      th {
+        background-color: grey;
+        color: white;
+        font-weight: 1000px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Tabela</h1>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Área</th>
+          <th rowspan="2">Disciplinas</th>
+          <th colspan="2">Notas</th>
+          <th rowspan="2">Média</th>
+        </tr>
+
+        <tr>
+          <th style="width: 100px;">Nota 1</th>
+          <th style="width: 100px;">Nota 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="4">Exactas</th>
+          <td class="left">Matemática</td>
+          <td>14</td>
+          <td>16</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td class="left">Física</td>
+          <td>17</td>
+          <td>18</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="left">Química</td>
+          <td>18</td>
+          <td>18</td>
+          <td>19.5</td>
+        </tr>
+        <tr>
+          <td class="left">Biologia</td>
+          <td>19</td>
+          <td>18.5</td>
+          <td>17</td>
+        </tr>
+        <tr>
+        <tr>
+          <th colspan="4" class="left">Média Exactas</th>
+          <td class="grey">0.0</td>
+        </tr>
+        <th rowspan="2">Humanas</th>
+        <td class="left">História</td>
+        <td>16</td>
+        <td>15</td>
+        <td>14.5</td>
+
+        <tr>
+          <td class="left">Geografia</td>
+          <td>14</td>
+          <td>17</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <th colspan="4" class="left">Média Exactas</th>
+          <td class="grey">0.0</td>
+        </tr>
+      </tbody>
+      <tr>
+
+
+
+
+
+
+      </tr>
+      <tbody>
+      </tbody>
+    </table>
+  </body>
+
 </html>
