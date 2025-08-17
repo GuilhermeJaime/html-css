@@ -47,6 +47,38 @@
     tbody>tr:nth-child(2n) {
       background-color: rgb(221, 221, 221);
     }
+
+    input {
+      background-color: transparent;
+      transform: none;
+      border: 0px;
+      padding: 5px;
+      margin: 0px;
+      width: 150px;
+    }
+
+    /* Estilo para o botão de soma */
+    .btn-soma {
+      background-color: rgb(6, 73, 141);
+      color: rgb(255, 255, 255);
+
+      align-items: center;
+      border-radius: 8px;
+      margin: 5px;
+      font-size: large;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      width: 200px;
+      height: 40px;
+    }
+
+    .btn-soma:hover {
+      transform: translate(0.3s);
+      border: 1px solid rgba(4, 23, 30, 0.796);
+      transition: 0.3s;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.423);
+    }
   </style>
 
   <body>
@@ -64,95 +96,95 @@
       <tbody>
         <tr>
           <td>Luanda</td>
-          <td>37 578</td>
+          <td> <input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Bengo</td>
-          <td>20 789</td>
+          <td> <input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Huambo</td>
-          <td>15 456</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Cabinda</td>
-          <td>10 123</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Malange</td>
-          <td>8 765</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Huíla</td>
-          <td>12 345</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Namibe</td>
-          <td>9 876</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Uíge</td>
-          <td>14 321</td>
+          <td> <input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Zaire</td>
-          <td>11 234</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Cuando Cubango</td>
-          <td>7 890</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Cunene</td>
-          <td>6 543</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Benguela</td>
-          <td>18 765</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Bié</td>
-          <td>13 456</td>
+          <td> <input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Malanje</td>
-          <td>9 012</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Luena</td>
-          <td>8 654</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Sumbe</td>
-          <td>7 890</td>
+          <td> <input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
         <tr>
           <td>Ondjiva</td>
-          <td>6 789</td>
+          <td><input type="number" name="num" id="num"> </td>
         </tr>
 
 
@@ -162,11 +194,13 @@
       <tfoot>
         <tr>
           <th scope="row">Total da População</th>
-          <td><strong>37 890 575</strong></td>
+          <td><strong id="res"></strong></td>
         </tr>
       </tfoot>
 
+
     </table>
+
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates omnis reprehenderit quibusdam deserunt et,
       asperiores accusantium repudiandae distinctio eligendi debitis vel sit nam ea incidunt molestiae porro ut commodi
       corrupti.</p>
@@ -205,6 +239,7 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sunt suscipit ipsa aut. Iure unde voluptatem
       harum laboriosam sequi nostrum perferendis sint asperiores possimus dolorum natus, quibusdam quod est facilis.</p>
 
+    <script src="scripts.js"></script>
   </body>
 
 </html>
