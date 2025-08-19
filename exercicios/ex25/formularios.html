@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <fieldset>
+        <label for="iname">Nome:</label>
+        <input type="text" name="name" id="iname"> <br> <br>
+
+        <label for="iemail">Email:</label>
+        <input type="email" name="email" id="iemail"> <br> <br>
+
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha"> <br> <br>
+
+        <label for="idata">Insira sua data de nascimento:</label>
+        <input type="date" name="data" id="idata"> <br> <br>
+
+        <label for="irange">Selecione um número:</label> <br>
+        <input type="range" name="num" id="irange" min="0" max="100" step="1" value="5"
+          oninput="ival.innerHTML = Number (irange.value)">
+        <output id="ival">5</output> <br><br>
+
+
+
+        <label for="iprovíncia">Indique a sua província:</label>
+        <select name="província" id="iprovíncia">
+          <option value="província0">Selecione uma província</option>
+
+          <optgroup label="Províncias do Norte">
+            <option value="província1">Luanda</option>
+            <option value="província2">Bengo</option>
+            <option value="província3">Benguela</option>
+            <option value="província4">Moxico</option>
+          </optgroup>
+
+          <optgroup label="Províncias do Sul">
+            <option value="província5">Huambo</option>
+            <option value="província6">Huíla</option>
+            <option value="província7">Cabinda</option>
+            <option value="província8">Cunene</option>
+          </optgroup>
+
+        </select> <br> <br>
+
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="profissão" id="iprof" list="lstprof"> <br> <br>
+        <datalist id="lstprof">
+          <option value="Engenheiro">
+          <option value="Médico">
+          <option value="Professor">
+          <option value="Advogado">
+          <option value="Arquiteto">
+
+        </datalist>
+
+        <p>
+          <label for="msg">Insira sua mensagem:</label>
+          <textarea name="msg" id="msg"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="enviar">
+          <input type="reset" value="reset">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+
+</html>
