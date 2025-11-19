@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
   </head>
   <style>
     div.container {
       display: flex;
       flex-flow: row wrap;
-      background-color: #e28686;
 
+      background-color: #e28686;
     }
 
     div.item {
-      background-color: #4CAF50;
-      color: white;
-      flex: auto;
-      font-size: 18px;
+      background-color: #4caf50;
       text-align: center;
       border: 1px solid black;
+      flex-basis: 150px;
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+    #ia{
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
 
+      #ib{
+      flex-shrink: 1;
+      flex-grow: 2;
+    }
+      #ic{
+      flex-shrink: 1;
+      flex-grow: 5;
     }
   </style>
 
   <body>
     <div class="container">
-      <div class="item">Exemplo de flexbox A</div>
-      <div class="item">Exemplo de flexbox B</div>
-      <div class="item">Exemplo de flexbox C</div>
-      <div class="item">Exemplo de flexbox D</div>
-      <div class="item">Exemplo de flexbox E</div>
-      <div class="item">Exemplo de flexbox F</div>
-
-
+      <div class="item" id="ia">A</div>
+      <div class="item" id="ib">B</div>
+      <div class="item" id="ic">C</div>
+ 
   </body>
-
 </html>
